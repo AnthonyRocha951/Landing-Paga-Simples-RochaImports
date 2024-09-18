@@ -9,7 +9,7 @@
 
 body {
     font-size: 100%;
-    background: linear-gradient(to right, #B3D7DD , #0fd1f3, #B3D7DD );
+    background-color: #0fd1f3;
 }
 
 .cabeçalho {
@@ -17,28 +17,34 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    padding: 24px;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0px 3px 10px 3px #0000005b;
+    margin-bottom: 100px;
 }
 
 .logo-cabeçalho {
-    height: 72px;
+    font-family: 'Bangers', cursive;
 }
 
 .cabeçalho-menu {
     display: flex;
-    gap: 32px;
+    gap: 15px;
 }
 
 .item-menu {
     font-family: 'Bangers', cursive;
     color: black;
-    font-weight: 400;
-    font-size: 25px;
+    font-weight: normal;
+    font-size: 20px;
+    padding: 5px;
+    transition: .5s;
 }
 
-.conteudo {
-    margin-bottom: 48px;
-    border-top: 0.4px solid black;
+.item-menu:hover {
+    color: white;
+    background-color: black;
+    transition: .5s;
 }
 
 .conteudo-principal {
@@ -46,6 +52,7 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    margin-bottom: 100px;
 }
 
 .conteudo-principal-escrito {
@@ -75,16 +82,17 @@ body {
     color: white;
     border: none;
     box-shadow: 4px 5px 4px black;
-    border-radius: 20px;
+    border-radius: 10px;
     font-family: 'Bangers', cursive;
     font-weight: 400;
     font-size: 20px;
+    transition: .5s;
 }
 
 .botao-conteudo:hover {
-    box-shadow: 5px 5px 5px rgb(0, 125, 241);
     background-color: white;
     color: black;
+    transition: .5s;
 }
 
 .imagem-do-conteudo {
@@ -97,12 +105,10 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 24px;
-    margin-top: 48px;
+    margin-bottom: 100px;
 }
 
 .conteudo-secundario-h3 {
-    border-top: 0.4px solid black;
-    padding-top: 48px;
     font-family: 'Bangers', cursive;
     font-weight: 400;
     font-size: 40px;
@@ -115,12 +121,12 @@ body {
     font-weight: 300;
     font-size: 18px;
     color: black;
-    box-shadow: 4px 5px 4px black;
 }
 
 .rodape {
+    background-color: white;
     padding: 32px;
-    border-top: 0.4px solid black;
+    box-shadow: 0px -3px 10px 3px #0000005b;
 }
 
 .imagem-rodape {
